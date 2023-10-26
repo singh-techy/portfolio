@@ -10,7 +10,7 @@ $(document).ready(function () {
     function loadContentAndHandleHistory(page, addToHistory) {
         if (pageUrls[page]) {
             if (addToHistory) {
-                history.pushState({ page: page }, null, "");
+                history.pushState({ page: page }, null, "/portfolio");
             }
             $("#content-container").load(pageUrls[page], function (response, status, xhr) {
                 if (page == 'projects' && document.getElementById("dark-mode-toggle").textContent == 'Light Mode') {
