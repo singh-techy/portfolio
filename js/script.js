@@ -46,7 +46,7 @@ $(document).ready(function () {
         }
     }
 
-    history.replaceState({ page: "home" }, null, "/");
+    history.replaceState({ page: "home" }, null, "/portfolio");
 
     $("nav a").click(function (event) {
         var page = $(this).data("page");
