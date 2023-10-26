@@ -37,11 +37,16 @@ $(document).ready(function () {
         }
     }
     
-    function handleInitialLoad() {
-        history.replaceState({ page: "home" }, null, "/portfolio");
-        loadContentAndHandleHistory("home", false);
+    function handleInitialLoad() {     
+        var initialPage = getInitialPageFromURL();
+        if (initialPage) {
+            loadContentAndHandleHistory(initialPage, false);
+        } else {
+            loadContentAndHandleHistory("home", false);
+        }
     }
-
+    history.replaceState({ page: "home" }, null, "/portfolio");
+    
     $("nav a").click(function (event) {
         var page = $(this).data("page");
 
