@@ -38,12 +38,7 @@ $(document).ready(function () {
     }
 
     function handleInitialLoad() {
-        var initialPage = getInitialPageFromURL();
-        if (initialPage) {
-            loadContentAndHandleHistory(initialPage, false);
-        } else {
-            loadContentAndHandleHistory("home", false);
-        }
+        loadContentAndHandleHistory("home", false);
     }
 
     history.replaceState({ page: "home" }, null, "/portfolio");
