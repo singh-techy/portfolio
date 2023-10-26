@@ -37,9 +37,8 @@ $(document).ready(function () {
         }
     }
     
-    history.replaceState({ page: "home" }, null, "/portfolio");
-    
     function handleInitialLoad() {
+        history.replaceState({ page: "home" }, null, "/portfolio");
         loadContentAndHandleHistory("home", false);
     }
 
