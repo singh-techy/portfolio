@@ -1,0 +1,571 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+:root {
+    --orange-red: #FF4433;
+    --light-grey: #ece9e1;
+    --blue-color: #2304AC;
+    --white-color: #ffffff;
+    --subtitle-color: #141c3a;
+    --border-color: #cecbcb;
+    --glass-orange: #AC2800;
+    --glass-blue: #1F00AA;
+    --list-text-color: #555;
+    --paragraph-color: #333;
+    --dark-black: #000;
+    --contact-color: #363636;
+    --bg-light-red: #ffdad0;
+    --footer-color: #393232;
+    --shadow-color: #26454D;
+    --light-white : #ffffff;
+}
+
+.dark-mode {
+    --orange-red: #FF6633;
+    --light-grey: #2e2c2b;
+    --blue-color: #0099CC;
+    --white-color: #000;
+    --subtitle-color: #d2d2d2;
+    --border-color: #474545;
+    --glass-orange: #FF3500;
+    --glass-blue: #0066FF;
+    --list-text-color: #bbb;
+    --paragraph-color: #999;
+    --dark-black: #fff;
+    --contact-color: #ececec;
+    --bg-light-red: #7b0000;
+    --footer-color: #393232;
+    --shadow-color: #aaa;
+    --light-white : #2e2c2b;
+}
+
+body {
+    margin-bottom: -16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--white-color);
+    color: var(--dark-black);
+}
+
+nav {
+    background-color: var(--white-color);
+    font-size: 1rem;
+}
+
+footer {
+    background-color: var(--footer-color);
+}
+
+.dark-mode-img img {
+    filter: brightness(0.12) sepia(1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+    font-family: "Poppins", sans-serif;
+}
+
+.mt-home {
+    margin-top: 20px;
+}
+
+.subtitle {
+    color: var(--subtitle-color);
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.25;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.heading-sec-main {
+    display: block;
+    font-size: 2.5rem;
+    letter-spacing: .9px;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    margin-top: 1rem;
+    position: relative;
+    color: var(--white-color);
+    font-weight: bold;
+}
+
+.heading-sec-main1 {
+    display: block;
+    font-size: 2.5rem;
+    letter-spacing: .9px;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    position: relative;
+    color: var(--white-color);
+    font-weight: bold;
+}
+
+.heading-sec-main::after {
+    content: '';
+    position: absolute;
+    top: calc(100% + 1rem);
+    height: 5px;
+    width: 2.5rem;
+    background: var(--white-color);
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.list-sec-main {
+    display: block;
+    font-size: 1.0rem;
+    letter-spacing: .9px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: .5rem;
+    position: relative;
+}
+
+#modalList li {
+    font-size: 16px;
+    color: var(--list-text-color);
+    margin-bottom: 5px;
+    list-style: none;
+}
+
+#modalListinfo li {
+    font-size: 15px;
+    color: var(--list-text-color);
+    margin-bottom: 3px;
+    list-style: none;
+}
+
+#modalListinfo li::before {
+    content: "•";
+    color: var(--glass-orange);
+    font-weight: bold;
+    display: inline-block;
+    width: 8px;
+}
+
+#modalList li::before {
+    content: "•";
+    color: var(--glass-orange);
+    font-weight: bold;
+    display: inline-block;
+    width: 15px;
+}
+
+
+#modalParagraph {
+    font-size: 18px;
+    color: var(--paragraph-color);
+    margin-bottom: 10px;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    background-color: var(--orange-red);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle i {
+    font-size: 50px;
+    color: var(--white-color);
+}
+
+.circleh {
+    width: 60px;
+    height: 60px;
+    background-color: var(--orange-red);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.circleh i {
+    font-size: 40px;
+    color: var(--white-color);
+}
+
+#modalList {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.skills-text {
+    font-size: .85rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.home-icons i {
+    color: var(--light-grey);
+    font-size: 2.5rem;
+}
+
+.stats h1 {
+    font-size: 3rem;
+    background: linear-gradient(to right, var(--glass-orange), var(--glass-blue)) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    color: transparent !important;
+}
+
+.footer-content {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.pie-container {
+    position: relative;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .pie-chart {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(var(--orange-red) 0% 90%, #f0f0f0 90% 100%);
+    box-shadow: 0 0 10px var(--contact-color);
+    transform: rotate(-90deg);
+    position: relative;
+  }
+  
+  .inner-circle {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background: var(--white-color);
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: rotate(90deg);
+  }
+  
+  .grade-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: .75rem;
+    color: var(--glass-blue);
+    font-weight: lighter;
+  
+  }
+
+  .fs-small {
+    font-size: .8rem;
+  }
+  .fs-small div {
+    margin: 10px;
+  }
+
+@media (max-width: 767px) {
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .fs-small {
+        font-size: .65rem;
+    }
+
+    .heading-sec-main {
+        font-size: 2rem;
+        letter-spacing: .7px;
+        margin-bottom: 2rem;
+        margin-top: .75rem;
+    }
+
+    .heading-sec-main1 {
+        font-size: 2rem;
+        letter-spacing: .7px;
+        margin-bottom: .75rem;
+        margin-top: .75rem;
+    }
+
+    .heading-sec-main::after {
+        top: calc(100% + .75rem);
+        width: 2rem;
+    }
+
+    .list-sec-main {
+        font-size: 0.75rem;
+        letter-spacing: .7px;
+        letter-spacing: 1.5px;
+        margin-bottom: .37px;
+    }
+
+    #modalList li {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+
+    #modalListinfo li {
+        font-size: 10px;
+        margin-bottom: 2px;
+    }
+
+    #modalParagraph {
+        font-size: 14px;
+        margin-bottom: 7.5px;
+    }
+
+    .circle {
+        width: 60px;
+        height: 60px;
+    }
+
+    .circle i {
+        font-size: 40px;
+    }
+
+    .circleh {
+        width: 40px;
+        height: 40px;
+        font-size: 0.5rem;
+    }
+
+    .circleh i {
+        font-size: 30px;
+    }
+
+    #modalList {
+        padding-left: 15px;
+    }
+
+    .skills-text {
+        font-size: .65rem;
+    }
+
+    p {
+        font-size: .85rem;
+    }
+
+    .home-icons i {
+        font-size: 2rem;
+    }
+
+    .stats h1 {
+        font-size: 2.4rem;
+    }
+    .mt-home {
+        margin-top: 3px;
+    }
+    .footer-content {
+        font-size: .75rem;
+    }
+    .fa-2x-cstm {
+        font-size: 1.5em;
+    }
+    .mt-5 {
+        margin-top: 2rem !important;
+    }
+    .pt-5 {
+        padding-top: 2rem !important;
+    }
+    .my-5 {
+        margin: 2rem 0 !important;
+    }
+    .py-5 {
+        padding: 2rem 0 !important;
+    }
+    .btn {
+        font-size: 12px !important; 
+        padding: 5px;
+        height: auto;
+        width: auto; 
+        line-height: inherit; 
+    }
+    nav li {
+        font-size: 0.85rem;
+    }
+    .navbar-img {
+        background-color: #fff;
+        color: #fff;
+    }
+    .bar-toggler-icon {
+        background-color: #fff !important;
+    }
+}
+
+.pinfo i {
+    background: linear-gradient(to right, var(--glass-orange), var(--glass-blue)) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    color: transparent !important;
+}
+
+.navbar-img {
+    background-color: #fff !important;
+}
+/* Color related Properties */
+.bg-light {
+    background-color: var(--white-color) !important;
+}
+#orange-color {
+    color: var(--orange-red);
+}
+
+#blue-color {
+    color: var(--blue-color);
+}
+
+#grey-color {
+    color: var(--light-grey)
+}
+
+#white-color {
+    color: var(--white-color);
+}
+#light-head {
+    color: var(--list-text-color);
+}
+
+.awards {
+    background-color: var(--glass-orange);
+    color: var(--light-grey);
+}
+
+.light-red {
+    background-color: var(--bg-light-red);
+    color: var(--list-text-color);
+}
+
+/* Other styles */
+.sideicons ul li {
+    margin-top: 25px;
+    margin-right: 20px;
+}
+
+.fa-brands {
+    color: var(--orange-red);
+}
+
+.skill-grid .fs-5 {
+    color: var(--blue-color);
+}
+
+#heading-color,.nav-link.active {
+    background: linear-gradient(to right, var(--orange-red), var(--blue-color)) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    color: transparent !important;
+    font-size: 110%;
+}
+
+.nav-link,
+.nav-link:hover {
+    color: var(--contact-color);
+}
+
+.project-bg {
+    background: linear-gradient(to right, var(--glass-orange), var(--glass-blue)) !important;
+    color: var(--white-color);
+    padding-bottom: 150px;
+}
+
+.margin-cstm {
+    margin-top: -100px;
+}
+
+.border-1 {
+    border: 1px solid var(--border-color);
+
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.image-container p {
+    color: var(--contact-color);
+}
+
+.hover-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #130505;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 15px;
+}
+
+.image-container .hover-content {
+    opacity: .8;
+}
+
+.image-container:hover .hover-content {
+    box-shadow: var(--shadow-color) 0px 20px 30px -10px;
+    opacity: 1;
+}
+
+.shadow-cstm {
+    box-shadow: var(--shadow-color) 0px 20px 35px -12px;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup-bg {
+    background: url('/img/bg3.jpg') center center no-repeat;
+    background-size: cover;
+    color: var(--white-color);
+}
+
+.popup-stl {
+    background: var(--light-grey);
+}
+
+.card:hover {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.svgw {
+    width: 200px;
+}
+
+.contacttitle {
+    color: var(--contact-color);
+    font-weight: 100;
+    line-height: 1.125;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}

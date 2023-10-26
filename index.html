@@ -1,10 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BIO</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ayush Singh</title>
 </head>
-<body>   
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand ps-2" href="./"><img src="img/portfolio.png" alt="" height="35" width="35" class="navbar-img"><span
+                    id="orange-color" class="ps-1">Ayush</span><span id="blue-color" class="ps-1">Singh</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="background-color: white;"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-lg-0">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" aria-current="page" href="#" data-page="home">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#" data-page="education">Education</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#" data-page="projects">Projects and Experience</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link download-link" href="/resume/AyushKumar_Singh.doc"
+                            download="Resume.doc">Resume</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#" data-page="contact">Contact</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <button class="btn btn-outline-danger" id="dark-mode-toggle">Dark Mode</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main id="content-container">
+        <section>
+            <div class="container mt-home">
+                <div class="row justify-content-around align-items-center">
+                    <div class="col-md-1 text-center sideicons">
+                        <ul class="list-unstyled d-flex flex-row flex-md-column justify-content-center">
+                            <li><a href="" target="_blank"><i class="fa-brands fa-square-instagram fa-2x fa-2x-cstm"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/ayush-singh-361646200" target="_blank"><i
+                                        class="fa-brands fa-linkedin-in fa-2x  fa-2x-cstm"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-square-twitter fa-2x fa-2x-cstm" target="_blank"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 mt-1">
+                        <h1 class="fw-light mb-4" id="blue-color"><span id="auto-type"></span></h1>
+                        <span class="opacity-75 h5 fw-light">Software Engineer</span>
+                        <p class="pt-2">Versatile software developer with a strong backend focus, emerging
+                            frontend interest, and skills in system design, memory optimization, NFR testing, and
+                            deployment management. </p>
+                        <p id="blue-color" class="pb-2">Let's build great software together.</p>
+                        <button class="btn btn-sm btn-outline-danger mb-2" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal1">Learn more</button>
+                    </div>
+                    <div class="col-md-5 mt-3">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img src="img/developer (2).png" alt="" class="w-75">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="my-5">
+            <div class="container shadow py-2 toolbox">
+                <h3 class="text-center fw-bold" id="blue-color">My ToolBox</h3>
+                <p class="text-center subtitle opacity-75">Mastering the tools of the trade</p>
+                <div class="row g-2">
+                    <div class="col-6 col-lg-2 col-md-4">
+                        <div
+                            class="d-flex flex-column justify-content-center align-items-center light-red p-2 rounded-2">
+                            <div class="circleh">
+                                <i class="fa-brands fa-java"></i>
+                            </div>
+                            <div class="pt-1 skills-text">
+                                Java/J2EE/Springboot
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4">
+                        <div
+                            class="d-flex flex-column justify-content-center align-items-center light-red p-2 rounded-2">
+                            <div class="circleh">
+                                <i class="fa-brands fa-html5"></i>
+                            </div>
+                            <div class="pt-1 skills-text">
+                                HTML/CSS/BootStrap
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4">
+                        <div
+                            class="d-flex flex-column justify-content-center align-items-center light-red p-2 rounded-2">
+                            <div class="circleh">
+                                <i class="fa-brands fa-js"></i>
+                            </div>
+                            <div class="pt-1 skills-text">
+                                JS/TS/Angular
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4">
+                        <div
+                            class="d-flex flex-column justify-content-center align-items-center light-red p-2 rounded-2">
+                            <div class="circleh">
+                                <i class="fa-solid fa-database"></i>
+                            </div>
+                            <div class="pt-1 skills-text">
+                                Postgres/PostgreSQL
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4">
+                        <div
+                            class="d-flex flex-column justify-content-center align-items-center light-red p-2 rounded-2">
+                            <div class="circleh">
+                                <i class="fa-solid fa-c"></i>
+                            </div>
+                            <div class="pt-1 skills-text">
+                                C/C++
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4">
+                        <div
+                            class="d-flex flex-column justify-content-center align-items-center light-red p-2 rounded-2">
+                            <div class="circleh">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="pt-1 skills-text">
+                                DS & Algorithms
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5 pt-1">
+            <div class="container my-5 stats">
+                <div class="row justify-content-evenly g-4">
+                    <div class="col-md-3 text-center">
+                        <h1 class="fw-bold" id="blue-color">2.5+</h1>
+                        <div class="subtitle opacity-75">With over 2.5 years of hands-on experience in Software
+                            Development, I have honed my skills to deliver exceptional solutions.</div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <h1 class="fw-bold" id="blue-color">10+</h1>
+                        <div class="subtitle opacity-75">I've had the privilege of working on more than 10 impactful
+                            projects that have driven positive change within organizations and industries.</div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <h1 class="fw-bold" id="blue-color">5+</h1>
+                        <div class="subtitle opacity-75">I've been honored with over 5 prestigious awards and
+                            recognitions for outstanding contributions and achievements.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5 pt-5">
+            <div class="container-fluid awards">
+                <div class="h3 fw-bold text-center" id="white-color">Awards and Recognitions</div>
+                <div class="row g-0 home-icons justify-content-center align-items-center">
+                    <div class="col-md-3 p-2 d-flex flex-column justify-content-center align-items-center border-end">
+                        <i class="fa-solid fa-trophy"></i>
+                        <div class="subtitle p-2" id="white-color">Stellar Award</div>
+                        <p class="opacity-75 text-center">Recieved Stellar award for individual Contributions and Team
+                            Work</p>
+                    </div>
+                    <div class="col-md-3 p-2 d-flex flex-column justify-content-center align-items-center border-end">
+                        <i class="fa-solid fa-award"></i>
+                        <div class="subtitle p-2" id="white-color">Applause Awards</div>
+                        <p class="opacity-75 text-center">Recieved Applause award twice for Contributions in Big Data
+                            processing and Resiliency</p>
+                    </div>
+                    <div class="col-md-3 p-2 d-flex flex-column justify-content-center align-items-center border-end">
+                        <i class="fa-solid fa-medal"></i>
+                        <div class="subtitle p-2" id="white-color">Ramanujan Contest</div>
+                        <p class="opacity-75 text-center">Secured 2nd rank in Ramanujan Mathematics Olympiad and won
+                            cash Prize</p>
+                    </div>
+                    <div class="col-md-3 p-2 d-flex flex-column justify-content-center align-items-center">
+                        <i class="fa-regular fa-star"></i>
+                        <div class="subtitle p-2" id="white-color">Jee Advanced</div>
+                        <p class="opacity-75 text-center">Secured 848 rank in Jee Mains and 2585 rank in Jee Advanced in
+                            2017</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content popup-stl">
+                    <div class="modal-header popup-bg">
+                        <div class="modal-title h5" id="exampleModalLabel">Personal Information</div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 justify-content-center align-items-center pinfo">
+                                    <div class="row d-flex gx-1 mt-1">
+                                        <div class="col-6">
+                                            <span class="justify-content-center shadow bg-light align-items-center d-flex flex-column p-3 m-1">
+                                                <i class="fa-solid fa-om fa-2x fa-2x-cstm mb-1 opacity-75"></i>
+                                                <div class="list-sec-main">Hinduism</div>
+                                            </span>
+                                        </div>
+                                        <div class="col-6">
+                                            <span class="justify-content-center shadow bg-light align-items-center d-flex flex-column p-3 m-1">
+                                                <i class="fa-solid fa-flag fa-2x fa-2x-cstm mb-1 opacity-75"></i>
+                                                <div class="list-sec-main">Indian <span class="d-none">abc</span>
+                                                </div>
+                                            </span>
+                                        </div>
+                                      </div>
+                                      <div class="row d-flex mt-3">
+                                        <div class="col-12">
+                                            <div class="justify-content-around shadow bg-light align-items-center d-flex p-3 m-1">
+                                                <i class="fa-solid fa-house fa-2x fa-2x-cstm mb-1 opacity-75 "></i>
+                                                <div class="list-sec-main align-self-center">Lucknow, India</div>
+                                            </div>
+                                        </div>
+                                      </div>  
+                                </div>             
+                                <div class="col-md-6 justify-content-center align-items-center">
+                                    <div id="blue-color" class="list-sec-main text-center mt-2">Hobbies</div>
+                                    <div class="justify-content-center fs-small text-center" id="light-head">
+                                        <div>
+                                            <span class="border border-danger p-1">Travelling</span>
+                                            <span class="border border-danger p-1">Reading</span>
+                                            <span class="border border-danger p-1">Movies</span>
+                                        </div>
+                                        <div>
+                                            <span class="border border-danger p-1">Cricket</span>
+                                            <span class="border border-danger p-1">Badminton</span>
+                                            <span class="border border-danger p-1">Chess</span>
+                                        </div>
+                                        <div>
+                                            <span class="border border-danger p-1">Debate</span>
+                                            <span class="border border-danger p-1">Talk Shows</span>
+                                        </div>
+                                    </div>
+                                    <div id="blue-color" class="list-sec-main text-center my-1">Languages</div>
+                                    <div class="d-flex justify-content-center">
+                                        <div class="pie-container me-2">
+                                            <div class="pie-chart">
+                                                <div class="inner-circle">
+                                                    <div class="grade-label">English</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pie-container ms-2">
+                                            <div class="pie-chart">
+                                                <div class="inner-circle">
+                                                    <div class="grade-label">Hindi</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-outline-danger rounded-2" data-bs-dismiss="modal">Learn
+                            less</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul class="d-flex justify-content-center my-auto list-unstyled">
+            <li><a href="" target="_blank" class="mx-2"><i class="fa-brands fa-square-instagram fa-2x fa-2x-cstm"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/ayush-singh-361646200" target="_blank" class="mx-2"><i
+                        class="fa-brands fa-linkedin-in fa-2x fa-2x-cstm"></i></a></li>
+            <li><a href="" class="mx-2" target="_blank"><i class="fa-brands fa-square-twitter fa-2x fa-2x-cstm"></i></a></li>
+        </ul>
+        <div class="justify-content-center text-center d-flex flex-column">
+            <span class="footer-content">Copyright © 2023 Ayush Singh. All rights reserved.</span>
+        </div>
+    </footer>
+    <script src=" js/code.jquery.com_jquery-3.7.1.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/typed.umd.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/timeline.css">
+    <title>Ayush Singh</title>
+</head>
+
+<body>
+    <h1 class="fw-light" id="blue-color">Education Timeline</h1>
+    <ul class="timeline">
+        <li style="--accent-color:#41516C">
+            <div class="date">2017-2021</div>
+            <div class="title">Bachelors Degree in Electronics Engineering
+                <div class="pt-2 opacity-75">Indian Institute of Technology (B.H.U)</div>
+            </div>
+            <div class="descr">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-4 pe-1 pb-1 center-conter">
+                        <h6 class="text-center pb-1">CGPA</h6>
+                        <div class="pie-container justify-content-center d-flex">
+                            <div class="pie-chart">
+                                <div class="inner-circle">
+                                    <div class="grade-label">7.82</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">I completed my BTech in Electronics and Communication Engineering and actively participated in  events and activities, enhancing my academic journey with practical experience and valuable skills.</div>
+                </div>
+            </div>
+        </li>
+        <li style="--accent-color:#FBCA3E">
+            <div class="date">2016</div>
+            <div class="title">All India Senior School Certificate Examination
+                <div class="pt-2 opacity-75">Central Hindu School (B.H.U)</div>
+            </div>
+            <div class="descr">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-4 pe-1 pb-1 center-content">
+                        <h6 class="text-center pb-1">Percentage</h6>
+                        <div class="pie-container justify-content-center d-flex">
+                            <div class="pie-chart">
+                                <div class="inner-circle">
+                                    <div class="grade-label">89.20%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">Cherished my educational journey in the vibrant city of Varanasi and excelled
+                        in the All India Senior School Certificate Examination with a 89.20% grade.</div>
+                </div>
+            </div>
+        </li>
+        <li style="--accent-color:#E24A68">
+            <div class="date">2014</div>
+            <div class="title">All India Secondary School Examination
+                <div class="pt-2 opacity-75">Central Hindu School (B.H.U)</div>
+            </div>
+            <div class="descr">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-4 pe-1 pb-1 center-content">
+                        <h6 class="text-center pb-1">Percentage</h6>
+                        <div class="pie-container justify-content-center d-flex">
+                            <div class="pie-chart">
+                                <div class="inner-circle">
+                                    <div class="grade-label">95%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">Completed my educational journey in the vibrant city of Varanasi and excelled
+                        in the All India Secondary School Examination with a 95% grade.</div>
+                </div>
+            </div>
+        </li>
+        <li style="--accent-color:#1B5F8C">
+            <div class="date">2009-2012</div>
+            <div class="title">Elementary Education
+                <div class="pt-2 opacity-75">St. Mary's Convent School</div>
+            </div>
+            <div class="descr">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-4 pe-1 pb-1 center-content">
+                        <h6 class="text-center pb-1">Percentage</h6>
+                        <div class="pie-container justify-content-center d-flex">
+                            <div class="pie-chart">
+                                <div class="inner-circle">
+                                    <div class="grade-label">90%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">Completed my basic elementary education from St. Mary's Convent School located in Varanasi.I also participated in many co-curricular activites alongwith the academics.
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <script>
+        $(document).ready(function () {
+            // Get all the elements with class "pie-container"
+            const pieContainers = document.querySelectorAll('.pie-container');
+
+            // Loop through the elements and set the color dynamically
+            pieContainers.forEach((container) => {
+                const parentLi = container.closest('li');
+                const pieChart = container.querySelector('.pie-chart');
+                const gradeLabel = container.querySelector('.grade-label');
+                const accentColor = getComputedStyle(parentLi).getPropertyValue('--accent-color');
+                const percentageValue = gradeLabel.textContent;
+                if(percentageValue == 7.82) {    
+                    pieChart.style.background = `conic-gradient(${accentColor} 0% 78.20%, #f0f0f0 78.20% 100%)`;
+                }
+                // Set the color based on the accent color of the parent "li" element
+                else {
+                    pieChart.style.background = `conic-gradient(${accentColor} 0% ${percentageValue}, #f0f0f0 ${percentageValue} 100%)`;
+                }
+                gradeLabel.textContent = percentageValue; // Set your desired percentage value
+                gradeLabel.style.color = 'black'
+            });
+        });
+    </script>
+</body>
+
+</html>
