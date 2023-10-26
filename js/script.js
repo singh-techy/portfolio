@@ -1,16 +1,16 @@
 $(document).ready(function () {
 
     var pageUrls = {
-        "home": "index.html #content-container",
-        "education": "education.html",
-        "projects": "projects.html",
-        "contact": "contact.html",
+        "home": "/portfolio/index.html #content-container",
+        "education": "/portfolio/education.html",
+        "projects": "/portfolio/projects.html",
+        "contact": "/portfolio/contact.html",
     };
 
     function loadContentAndHandleHistory(page, addToHistory) {
         if (pageUrls[page]) {
             if (addToHistory) {
-                history.pushState({ page: page }, null, "/portfolio");
+                history.pushState({ page: page }, null, "/portfolio/");
             }
             $("#content-container").load(pageUrls[page], function (response, status, xhr) {
                 if (page == 'projects' && document.getElementById("dark-mode-toggle").textContent == 'Light Mode') {
