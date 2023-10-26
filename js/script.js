@@ -36,12 +36,12 @@ $(document).ready(function () {
             console.log("Page URL not defined.");
         }
     }
-
+    
+    history.replaceState({ page: "home" }, null, "/portfolio");
+    
     function handleInitialLoad() {
         loadContentAndHandleHistory("home", false);
     }
-
-    history.replaceState({ page: "home" }, null, "/portfolio");
 
     $("nav a").click(function (event) {
         var page = $(this).data("page");
