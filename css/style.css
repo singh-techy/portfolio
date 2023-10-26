@@ -538,7 +538,7 @@ p {
 }
 
 .popup-bg {
-    background: url('/img/bg3.jpg') center center no-repeat;
+    background: url('../img/bg3.jpg') center center no-repeat;
     background-size: cover;
     color: var(--white-color);
 }
